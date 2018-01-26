@@ -8,14 +8,14 @@ import android.arch.persistence.room.PrimaryKey;
  * Created by Hai Huynh on 1/10/18.
  */
 
-@Entity(tableName = "sale_type")
-public class SaleType {
+@Entity(tableName = "order_status")
+public class OrderStatus {
 
     @PrimaryKey(autoGenerate = true)
     private Long id;
 
-    @ColumnInfo(name = "name")
-    private String name;
+    @ColumnInfo(name = "status")
+    private String status;
 
     public Long getId() {
         return id;
@@ -25,11 +25,11 @@ public class SaleType {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getStatus() {
+        return status;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

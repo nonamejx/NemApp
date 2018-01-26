@@ -8,13 +8,13 @@ import android.arch.persistence.room.PrimaryKey;
  * Created by Hai Huynh on 1/10/18.
  */
 
-@Entity(tableName = "sale_type")
-public class SaleType {
+@Entity(tableName = "customer")
+public class Customer {
 
     @PrimaryKey(autoGenerate = true)
     private Long id;
 
-    @ColumnInfo(name = "name")
+    @ColumnInfo(name = "customer_name")
     private String name;
 
     public Long getId() {
